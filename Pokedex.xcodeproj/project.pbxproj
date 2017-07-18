@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		75427C531F1E33E70050B212 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427C521F1E33E70050B212 /* csv.swift */; };
+		75427C551F1E3AC70050B212 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75427C541F1E3AC70050B212 /* pokemon.ttf */; };
+		75427C5B1F1E3D460050B212 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75427C591F1E3D460050B212 /* music.mp3 */; };
+		75427C5C1F1E3D460050B212 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 75427C5A1F1E3D460050B212 /* music.png */; };
 		75C9F7351F1DFC8400089B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9F7341F1DFC8400089B70 /* AppDelegate.swift */; };
 		75C9F7371F1DFC8400089B70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9F7361F1DFC8400089B70 /* ViewController.swift */; };
 		75C9F73A1F1DFC8400089B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C9F7381F1DFC8400089B70 /* Main.storyboard */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		75427C521F1E33E70050B212 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		75427C541F1E3AC70050B212 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		75427C591F1E3D460050B212 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		75427C5A1F1E3D460050B212 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		75C9F7311F1DFC8400089B70 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C9F7341F1DFC8400089B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75C9F7361F1DFC8400089B70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75427C561F1E3AFD0050B212 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75C9F7361F1DFC8400089B70 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		75427C571F1E3B1A0050B212 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75427C591F1E3D460050B212 /* music.mp3 */,
+				75427C5A1F1E3D460050B212 /* music.png */,
+				75C9F7461F1E015B00089B70 /* pokemon.csv */,
+				75427C541F1E3AC70050B212 /* pokemon.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		75427C581F1E3B5B0050B212 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75427C521F1E33E70050B212 /* csv.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		75C9F7281F1DFC8400089B70 = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +95,14 @@
 		75C9F7331F1DFC8400089B70 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				75C9F74E1F1E12AA00089B70 /* View */,
 				75C9F7481F1E027300089B70 /* Model */,
-				75C9F7341F1DFC8400089B70 /* AppDelegate.swift */,
-				75427C521F1E33E70050B212 /* csv.swift */,
-				75C9F7361F1DFC8400089B70 /* ViewController.swift */,
+				75C9F74E1F1E12AA00089B70 /* View */,
+				75427C561F1E3AFD0050B212 /* Controller */,
+				75427C571F1E3B1A0050B212 /* Resources */,
+				75427C581F1E3B5B0050B212 /* Utils */,
 				75C9F7381F1DFC8400089B70 /* Main.storyboard */,
+				75C9F7341F1DFC8400089B70 /* AppDelegate.swift */,
 				75C9F73B1F1DFC8400089B70 /* Assets.xcassets */,
-				75C9F7461F1E015B00089B70 /* pokemon.csv */,
 				75C9F73D1F1DFC8400089B70 /* LaunchScreen.storyboard */,
 				75C9F7401F1DFC8400089B70 /* Info.plist */,
 			);
@@ -152,7 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75427C551F1E3AC70050B212 /* pokemon.ttf in Resources */,
+				75427C5C1F1E3D460050B212 /* music.png in Resources */,
 				75C9F73F1F1DFC8400089B70 /* LaunchScreen.storyboard in Resources */,
+				75427C5B1F1E3D460050B212 /* music.mp3 in Resources */,
 				75C9F73C1F1DFC8400089B70 /* Assets.xcassets in Resources */,
 				75C9F7471F1E015B00089B70 /* pokemon.csv in Resources */,
 				75C9F73A1F1DFC8400089B70 /* Main.storyboard in Resources */,
