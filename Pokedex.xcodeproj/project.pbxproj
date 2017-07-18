@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75427C531F1E33E70050B212 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427C521F1E33E70050B212 /* csv.swift */; };
 		75C9F7351F1DFC8400089B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9F7341F1DFC8400089B70 /* AppDelegate.swift */; };
 		75C9F7371F1DFC8400089B70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9F7361F1DFC8400089B70 /* ViewController.swift */; };
 		75C9F73A1F1DFC8400089B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C9F7381F1DFC8400089B70 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75427C521F1E33E70050B212 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		75C9F7311F1DFC8400089B70 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C9F7341F1DFC8400089B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75C9F7361F1DFC8400089B70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				75C9F74E1F1E12AA00089B70 /* View */,
 				75C9F7481F1E027300089B70 /* Model */,
 				75C9F7341F1DFC8400089B70 /* AppDelegate.swift */,
+				75427C521F1E33E70050B212 /* csv.swift */,
 				75C9F7361F1DFC8400089B70 /* ViewController.swift */,
 				75C9F7381F1DFC8400089B70 /* Main.storyboard */,
 				75C9F73B1F1DFC8400089B70 /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				75C9F7371F1DFC8400089B70 /* ViewController.swift in Sources */,
 				75C9F7351F1DFC8400089B70 /* AppDelegate.swift in Sources */,
 				75C9F74A1F1E029A00089B70 /* Pokemon.swift in Sources */,
+				75427C531F1E33E70050B212 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
