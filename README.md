@@ -1,2 +1,2 @@
-# Pokedex
+# PokedexApp
 iOS Pokedex app! 
