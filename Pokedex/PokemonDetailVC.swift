@@ -40,6 +40,7 @@ class PokemonDetailVC: UIViewController {
         
         lblPokedexID.text = "\(pokemon.pokedexId)"
         
+        imgNextEvo.isHidden = true // I do it not to show default image on start
         
         pokemon.downloadPokemonDetails {
             //Do when download completer
@@ -57,10 +58,21 @@ class PokemonDetailVC: UIViewController {
         lblHeight.text = pokemon.height
         lblWeight.text = pokemon.weight
         lblBaseAttack.text = pokemon.attack
-//        lblPokedexID.text = pokemon.pokedexId
-//        lblDescriptionq.text = pokemon.descriptionq
-//        lblDescriptionq.text = pokemon.descriptionq
-//        lblDescriptionq.text = pokemon.descriptionq
+
+        
+        if pokemon.nextEvoId == "" {
+            
+            lblEvo.text = "No Evolutions"
+            imgNextEvo.isHidden = true
+            
+        } else {
+            
+            imgNextEvo.isHidden = false
+            imgNextEvo.image = UIImage(named: pokemon.nextEvoId)
+            let str = "Next Evolution: \(pokemon.nextEvoName) - LVL \(pokemon.nextEvoLevel)"
+            lblEvo.text = str
+        
+        }
 
     
     }
