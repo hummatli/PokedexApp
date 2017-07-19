@@ -11,6 +11,7 @@ import UIKit
 class PokemonDetailVC: UIViewController {
 
     var pokemon: Pokemon!
+    
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var imgMain: UIImageView!
     @IBOutlet weak var lblDescription: UILabel!
@@ -29,9 +30,39 @@ class PokemonDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        lblName.text = pokemon.name.capitalized
         
-        lblName.text = pokemon.name
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        
+        imgMain.image = img
+        imgCurrentEvo.image = img
+        
+        lblPokedexID.text = "\(pokemon.pokedexId)"
+        
+        
+        pokemon.downloadPokemonDetails {
+            //Do when download completer
+            self.updateUI()
+        }
 
+    }
+    
+    func updateUI() {
+
+        lblDescription.text = pokemon.description
+
+        lblType.text = pokemon.type
+        lblDefence.text = pokemon.defense
+        lblHeight.text = pokemon.height
+        lblWeight.text = pokemon.weight
+        lblBaseAttack.text = pokemon.attack
+//        lblPokedexID.text = pokemon.pokedexId
+//        lblDescriptionq.text = pokemon.descriptionq
+//        lblDescriptionq.text = pokemon.descriptionq
+//        lblDescriptionq.text = pokemon.descriptionq
+
+    
     }
 
     @IBAction func btnBackPressed(_ sender: UIButton) {
