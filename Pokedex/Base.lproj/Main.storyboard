@@ -180,6 +180,9 @@
                                             <constraint firstAttribute="height" constant="23" id="yq6-6s-jgV"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="btnBackPressed:" destination="nkt-xC-IsT" eventType="touchUpInside" id="vxG-SU-ptu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -419,7 +422,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgCurrentEvo" destination="2Ac-iH-URL" id="GTc-8G-fmo"/>
+                        <outlet property="imgMain" destination="5uj-UQ-QGX" id="coo-Dc-jTM"/>
+                        <outlet property="imgNextEvo" destination="ucH-G9-9N1" id="Iqy-dw-cSK"/>
+                        <outlet property="lblBaseAttack" destination="rA8-9z-14x" id="sZC-rx-Ycb"/>
+                        <outlet property="lblDefence" destination="Z0F-TQ-7gZ" id="It6-nG-6PC"/>
+                        <outlet property="lblDescription" destination="LND-PH-svI" id="dzP-EZ-aO0"/>
+                        <outlet property="lblEvo" destination="q2P-iQ-CWU" id="jCR-YK-j8j"/>
+                        <outlet property="lblHeight" destination="rVn-vt-LrZ" id="hQd-xk-Wqz"/>
                         <outlet property="lblName" destination="OgD-Mn-wQA" id="Lpq-vT-gCH"/>
+                        <outlet property="lblPokedexID" destination="B8a-OI-0yB" id="mOK-KX-hZ0"/>
+                        <outlet property="lblType" destination="Wqp-5Q-xGA" id="gsp-rq-g1Y"/>
+                        <outlet property="lblWeight" destination="yeX-PV-Hre" id="i7b-3w-mp3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuH-CU-NcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
